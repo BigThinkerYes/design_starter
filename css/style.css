@@ -7,19 +7,33 @@ body{
   /* max-width: 760px; */
   max-width: 760px;
   margin: auto;
-  border: #404040 solid 3px;
-  background: #404040;
+  /* border: #404040 solid 3px;
+  background: #404040; */
 }
 .main-img img, .imgs img{
   width:100%;
+}
+.card{
+  width:500px !important;
+  margin-left:2rem;
+}
+.card-body{
+  padding:2rem;
+  width:500px !important;
+}
+.card-body, .imgs img{
+  width:400px !important;
 }
 .imgs{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
-  width:30%;
-  height:20%;
+  width:auto;
+  height:350px;
   background-size:cover;
+}
+.imgs img{
+  width:100%;
 }
 h1{ 
   text-align:center;
@@ -31,3 +45,9 @@ h1{
   opacity: 0;
   animation: fadeIn 0.5s ease-in 1 forwards;
 }*/
+
+@media(max-width: 768px){
+  .mb-resp{
+    margin-bottom:1rem;
+  }
+}
